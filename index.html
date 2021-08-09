@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="project-logo" />
+      </div>
+      <div class="container">
+        <div class="inner-left">
+          <div class="lil-description"><p>Bill:</p></div>
+          <input class="bill-input" type="text" />
+          <div class="lil-description-2"><p>Select Tip %</p></div>
+          <div class="tip-buttons">
+            <button class="tip-btn">5%</button>
+            <button class="tip-btn">10%</button>
+            <button class="tip-btn">15%</button>
+            <button class="tip-btn tip-btn-under">25%</button>
+            <button class="tip-btn tip-btn-under">50%</button>
+            <input type="text" class="enter-number" />
+          </div>
+          <div class="people-amount-title">
+          <div class="lil-description-3">Number of People:</div>
+          <div id="warning" class="red-warning">Can't be zero!</div>
+        </div>
+          <input class="people-amount"></input>
+        </div>
+        <div class="inner-right">
+          <div class="tip-amount">
+            <div class="tip-amount-left">
+              <div class="top-description">Tip Amount:</div>
+              <div class="lil-description"><p>/ person</p></div>
+            </div>
+            <div class="tip-amount-right">$0.00</div>
+          </div>
+          <div class="total-amount">
+            <div class="total-amount-left">
+              <div class="top-description">Total:</div>
+              <div class="lil-description"><p>/ person</p></div>
+            </div>
+            <div class="total-amount-right">$0.00</div>
+          </div>
+          <button class="reset-btn">RESET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
